@@ -24,11 +24,10 @@ This project is the foundation for all my cloud lab experiments. Before managing
 <h2>What You Need Before Starting (Prerequisites)</h2>
 
 - **An Azure Account:** You need an active subscription to build the virtual machines.
-- **A Virtual Network (VNet):** A configured digital space in Azure so your machines can communicate.
-- **A Windows Server VM:** This acts as the backbone of the project where Active Directory is installed.
-- **A Windows 11 Client VM:** A separate machine to act as the employee workstation for testing.
+- **Remote Desktop Connection (RDP):** Built into Windows or can be downloaded on a Mac to connect to the VMs. 
+
 <h2>How I Built It (Step-by-Step)</h2>
-<h2>Step 1: Installing Active Directory & Promoting the Server</h2>
+<h2>Step 1: Creating the Resource Group and Virtual Network (VNet)</h2>
 
 <p>
 <img width="1001" height="550" alt="step 1" src="https://github.com/user-attachments/assets/5d0d973a-0b01-443d-a542-1eaca247c96a" />
