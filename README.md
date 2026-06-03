@@ -40,38 +40,37 @@ This project is the foundation for all my cloud lab experiments. Before managing
   
 **Before managing any users, I needed to turn my basic Windows Server into a master Domain Controller.**
   
-**1:** Logged into the Windows Server VM using Remote Desktop.
+**1:** Logged into the Azure Portal.
   
-**2:** Opened Server Manager, clicked Add Roles and Features, and clicked Next until reaching Server Roles.
+**2:** Searched for Virtual Networks and clicked Create.
 
-**3:** Checked the box for Active Directory Domain Services (AD DS), accepted the required features, and hit Install.
+**3:** Created a new Resource Group (like Lab-RG) to keep all my project files in one neat pile.
 
-**4:** Once the install finished, I clicked the Yellow Notification Flag at the top right of the screen and selected Promote this server to a domain controller.
+**4:** Named the VNet (like Lab-VNet), chose a region close to me, and left the default IP address space settings. Hit Review + Create.
 
-**5:** Chose Add a new forest, named my root domain (like mydomain.com), set a recovery password, and let the wizard finish and reboot the server.
 </p>
 <br />
-<h2>Step 2: Creating the Org Chart (Organizational Units) </h2>
+<h2>Step 2: Deploying the Windows Server VM </h2>
 <p>
 <img width="783" height="500" alt="Screenshot 2026-05-13 115239" src="https://github.com/user-attachments/assets/269985ec-2a11-4ad2-a58f-f8af5521ac7c" />
 
 </p>
 <p>
   
-**With the server upgraded, I needed to build out the company's "org chart" using folders called Organizational Units (OUs) to keep the departments separated.**
+**Next, I built the main server machine that will eventually run the whole company network.**
   
-**1:** On the rebooted server, went to Server Manager -> Tools -> Active Directory Users and Computers.
+**1:** Searched for Virtual Machines in Azure and clicked Create -> Azure Virtual Machine.
   
-**2:** Right-clicked my domain name, went to New -> Organizational Unit.
+**2:** Selected my Lab-RG resource group, named the machine (like Server-VM), and chose Windows Server 2022 as the image.
 
-**3:** Created a main folder named _Employees.
+**3:** Set up my administrator username and password (wrote these down so I didn't get locked out!).
 
-**4:** Inside that new folder, I right-clicked again to make sub-folders for different departments: _Admins, Accounting, and IT.
+**4:** Under the Networking tab, made sure it was hooked up to the Lab-VNet I built in Step 1. Left the other defaults and hit Create.
 
 
 </p>
 <br />
-<h2>Step 3: Mass-Creating Users with a PowerShell Script</h2>
+<h2>Step 3: Deploying the Windows 10 Client VM</h2>
 <p>
 <img width="808" height="548" alt="Screenshot 2026-05-13 120309" src="https://github.com/user-attachments/assets/5f565de1-eace-4bd0-bdf0-4ee7670fff02" />
 
@@ -80,18 +79,18 @@ This project is the foundation for all my cloud lab experiments. Before managing
 </p>
 <p>
   
-**Instead of spending days manually typing in names and creating accounts one by one, I used automation to spin up hundreds of dummy accounts in seconds**
+**With the server built, I needed a standard workstation computer to represent an everyday employee.**
   
-**1:** Opened PowerShell ISE as an Administrator on the server.
+**1:** Followed the exact same steps to create a second Virtual Machine.
   
-**2:** Opened the lab's user-generation script that pulls names from a .csv file and assigns them to our _Employees folder.
+**2:** Named this one Client-VM and chose Windows 10 Pro as the operating system image.
 
-**3:** Ran the script and watched the host screen loop through and output the newly generated usernames.
+**3:** Under the Networking tab, I made absolutely sure it was assigned to the exact same Lab-VNet as the server. (If they aren't on the same network, they can't talk!).
 
-**4:** Went back to Active Directory Users and Computers and refreshed the folders to verify all the new employees were sitting in their proper spots.
+**4:** Hit Create and waited for the deployment to finish.
 </p>
 <br />
-<h2>Step 4: Connecting the Windows 10 Workstation to the Domain</h2>
+<h2>Step 4: Setting a Static Private IP for the Server</h2>
 <p>
 <img width="623" height="570" alt="Screenshot 2026-05-13 123209" src="https://github.com/user-attachments/assets/f2ffb586-702b-463e-9161-3ca84411c913" />
 
@@ -100,38 +99,19 @@ This project is the foundation for all my cloud lab experiments. Before managing
 </p>
 <p>
   
-**Next, I had to "introduce" the employee's computer to the server so the domain could take control of it.**
+**In a real business, the server's address cannot change, or the employee computers will get confused and lose connection. I had to lock the server's IP address in place.**
   
-**1:** Switched over and logged into the Windows 10 Client VM.
+**1:** In the Azure Portal, went to my Server-VM page.
   
-**2:** Opened network adapter settings, changed the Preferred DNS Server to match the Private IP Address of my Windows Server, and saved it. (This points the client directly to our Domain Controller).
+**2:** Clicked on Networking on the left menu, then clicked on the server's Network Interface (NIC).
 
-**3:** Opened the Windows menu, searched for About your PC, and clicked Advanced system settings.
+**3:** Went to IP configurations, clicked on the primary configuration, and changed the assignment from Dynamic (changing) to Static (permanent).
 
-**4:** Went to the Computer Name tab, clicked Change..., toggled the member settings from Workgroup to Domain, typed my domain name, and hit OK.
+**4:** Saved the changes. Now the server will keep the exact same private IP address forever.
 
-**5:** Logged in with the Server’s Admin credentials when the prompt popped up, got the "Welcome to the domain" message, and restarted the PC.
 
 </p>
 <br />
-<h2>Step 5: Testing the Employee Login</h2>
-<p>
-<img width="623" height="570" alt="Screenshot 2026-05-13 123209" src="https://github.com/user-attachments/assets/f2ffb586-702b-463e-9161-3ca84411c913" />
-
-
-
-</p>
-<p>
-  
-**The final test to prove the setup works perfectly is logging into the client computer using one of the random user accounts created by the script.**
-  
-**1:** On the restarted Windows 10 login screen, clicked Other User in the bottom left corner.
-  
-**2:** Typed in the username of one of the script-created users (like jdoe) and their password.
-
-**3:** Opened the Windows menu, searched for About your PC, and clicked Advanced system settings.
-
-**4:** Verified that the command returned mydomain\jdoe, proving the workstation is fully communicating with our cloud Active Directory server.
 
 
 
