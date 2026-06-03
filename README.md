@@ -61,7 +61,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
   
 **1:** Searched for Virtual Machines in Azure and clicked Create -> Azure Virtual Machine.
   
-**2:** Selected my Lab-RG resource group, named the machine (like Server-VM), and chose Windows Server 2022 as the image.
+**2:** Selected my Lab-RG resource group, named the machine (like Server-VM), and chose Windows Server 2025 as the image.
 
 **3:** Set up my administrator username and password (wrote these down so I didn't get locked out!).
 
