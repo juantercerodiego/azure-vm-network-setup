@@ -1,3 +1,4 @@
+
 <p align="center">
 <img width="640" height="401" alt="1_YNS5204KzMZTNiO2AhG0NQ" src="https://github.com/user-attachments/assets/0b0e1076-eee6-4d86-a165-a2bc75365c89" />
 
@@ -32,7 +33,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
 <h2>Step 1: Creating the Resource Group and Virtual Network (VNet)</h2>
 
 <p>
-<img width="1001" height="550" alt="step 1" src="https://github.com/user-attachments/assets/5d0d973a-0b01-443d-a542-1eaca247c96a" />
+<img width="771" height="650" alt="Screenshot 2026-06-03 111700" src="https://github.com/user-attachments/assets/4c7ca829-d5d2-4cbb-8e38-bb2727aacf86" />
 
 
 
