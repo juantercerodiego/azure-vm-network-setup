@@ -1,5 +1,7 @@
 <p align="center">
-<img width="750" height="340" alt="what-is-active-directory-and-why-is-it-used" src="https://github.com/user-attachments/assets/a7707de8-8111-4851-a1d1-d536d941249a" />
+<img width="640" height="401" alt="1_YNS5204KzMZTNiO2AhG0NQ" src="https://github.com/user-attachments/assets/0b0e1076-eee6-4d86-a165-a2bc75365c89" />
+
+
 </p>
 
 <h1>Azure Virtual Machines & Network Infrastructure Setup</h1>
