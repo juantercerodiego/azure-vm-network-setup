@@ -1,6 +1,7 @@
 
 
 
+
 <p align="center">
 <img width="640" height="401" alt="1_YNS5204KzMZTNiO2AhG0NQ" src="https://github.com/user-attachments/assets/0b0e1076-eee6-4d86-a165-a2bc75365c89" />
 
@@ -39,8 +40,9 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 
 
+
+
 </p>
-<p>
   
 **Before managing any users, I needed to turn my basic Windows Server into a master Domain Controller.**
   
@@ -51,6 +53,12 @@ This project is the foundation for all my cloud lab experiments. Before managing
 **3:** Created a new Resource Group (like Lab-RG) to keep all my project files in one neat pile.
 
 **4:** Named the VNet (like Lab-VNet), chose a region close to me, and left the default IP address space settings. Hit Review + Create.
+</p>
+
+**Verification of Successful Deployment**
+
+<img width="733" height="391" alt="Screenshot 2026-06-03 111925" src="https://github.com/user-attachments/assets/54995b23-c44e-43e5-a3ea-a2acdd49bf18" />
+
 
 </p>
 <br />
