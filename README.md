@@ -55,7 +55,10 @@ This project is the foundation for all my cloud lab experiments. Before managing
 **4:** Named the VNet (like Lab-VNet), chose a region close to me, and left the default IP address space settings. Hit Review + Create.
 </p>
 
+
+
 **Verification of Successful Deployment**
+
 
 <img width="733" height="391" alt="Screenshot 2026-06-03 111925" src="https://github.com/user-attachments/assets/54995b23-c44e-43e5-a3ea-a2acdd49bf18" />
 
