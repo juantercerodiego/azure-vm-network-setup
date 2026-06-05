@@ -45,7 +45,8 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 </p>
   
-**Before managing any users, I needed to turn my basic Windows Server into a master Domain Controller.**
+
+**Before buying furniture (VMs), you need a house and a front door. In Azure, that’s your Resource Group and VNet.**
   
 **1:** Logged into the Azure Portal.
   
@@ -59,8 +60,6 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 
 **Verification of Successful Deployment**
-
-
 <img width="733" height="391" alt="Screenshot 2026-06-03 111925" src="https://github.com/user-attachments/assets/54995b23-c44e-43e5-a3ea-a2acdd49bf18" />
 
 
@@ -68,7 +67,8 @@ This project is the foundation for all my cloud lab experiments. Before managing
 <br />
 <h2>Step 2: Deploying the Windows Server VM </h2>
 <p>
-<img width="783" height="500" alt="Screenshot 2026-05-13 115239" src="https://github.com/user-attachments/assets/269985ec-2a11-4ad2-a58f-f8af5521ac7c" />
+<img width="647" height="600" alt="Screenshot 2026-06-03 113645" src="https://github.com/user-attachments/assets/7ec5bfe5-6318-411d-9a55-f5dcd252b7b0" />
+
 
 </p>
 <p>
@@ -82,6 +82,11 @@ This project is the foundation for all my cloud lab experiments. Before managing
 **3:** Set up my administrator username and password (wrote these down so I didn't get locked out!).
 
 **4:** Under the Networking tab, made sure it was hooked up to the Lab-VNet I built in Step 1. Left the other defaults and hit Create.
+
+
+**Verification of Successful Deployment**
+<img width="771" height="517" alt="Screenshot 2026-06-03 114022" src="https://github.com/user-attachments/assets/f75b7ec2-5a6a-43f8-95ba-0023cf9fbc10" />
+
 
 
 </p>
