@@ -59,8 +59,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 
 
-**Verification of Successful Deployment**
-
+⭐ **Verification of Successful Deployment** ⭐
 <img width="733" height="391" alt="Screenshot 2026-06-03 111925" src="https://github.com/user-attachments/assets/54995b23-c44e-43e5-a3ea-a2acdd49bf18" />
 
 
@@ -85,7 +84,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
 **4:** Under the Networking tab, made sure it was hooked up to the Lab-VNet I built in Step 1. Left the other defaults and hit Create.
 
 
-**Verification of Successful Deployment**
+⭐ **Verification of Successful Deployment** ⭐
 <img width="771" height="517" alt="Screenshot 2026-06-03 114022" src="https://github.com/user-attachments/assets/f75b7ec2-5a6a-43f8-95ba-0023cf9fbc10" />
 
 
@@ -112,7 +111,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 **4:** Hit Create and waited for the deployment to finish.
 
-**Verification of Successful Deployment**
+⭐ **Verification of Successful Deployment** ⭐
 <img width="876" height="352" alt="Screenshot 2026-06-05 171042" src="https://github.com/user-attachments/assets/f7c86be6-e883-4575-bb7e-59ae6c703751" />
 
 
@@ -139,8 +138,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 **4:** Saved the changes. Now the server will keep the exact same private IP address forever.
 
-**Verification of Successful Deployment**
-
+⭐ **Verification of Successful Deployment** ⭐
 <img width="447" height="284" alt="Screenshot 2026-06-08 112746" src="https://github.com/user-attachments/assets/6293c4d8-3e4c-4472-b30e-f36ff0aa433b" />
 
 
