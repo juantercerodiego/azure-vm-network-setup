@@ -139,6 +139,11 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 **4:** Saved the changes. Now the server will keep the exact same private IP address forever.
 
+**Verification of Successful Deployment**
+
+<img width="447" height="284" alt="Screenshot 2026-06-08 112746" src="https://github.com/user-attachments/assets/6293c4d8-3e4c-4472-b30e-f36ff0aa433b" />
+
+
 
 </p>
 <br />
