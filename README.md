@@ -60,6 +60,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 
 **Verification of Successful Deployment**
+
 <img width="733" height="391" alt="Screenshot 2026-06-03 111925" src="https://github.com/user-attachments/assets/54995b23-c44e-43e5-a3ea-a2acdd49bf18" />
 
 
@@ -93,7 +94,8 @@ This project is the foundation for all my cloud lab experiments. Before managing
 <br />
 <h2>Step 3: Deploying the Windows 10 Client VM</h2>
 <p>
-<img width="808" height="548" alt="Screenshot 2026-05-13 120309" src="https://github.com/user-attachments/assets/5f565de1-eace-4bd0-bdf0-4ee7670fff02" />
+<img width="767" height="600" alt="Screenshot 2026-06-05 170358" src="https://github.com/user-attachments/assets/d696f209-1816-4a9c-8301-114cff6b9164" />
+
 
 
 
