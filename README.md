@@ -121,7 +121,8 @@ This project is the foundation for all my cloud lab experiments. Before managing
 <br />
 <h2>Step 4: Setting a Static Private IP for the Server</h2>
 <p>
-<img width="623" height="570" alt="Screenshot 2026-05-13 123209" src="https://github.com/user-attachments/assets/f2ffb586-702b-463e-9161-3ca84411c913" />
+<img width="592" height="600" alt="Screenshot 2026-06-08 112614" src="https://github.com/user-attachments/assets/52be9c82-44c3-451c-8e5d-071451abf5c7" />
+
 
 
 
