@@ -111,6 +111,12 @@ This project is the foundation for all my cloud lab experiments. Before managing
 **3:** Under the Networking tab, I made absolutely sure it was assigned to the exact same Lab-VNet as the server. (If they aren't on the same network, they can't talk!).
 
 **4:** Hit Create and waited for the deployment to finish.
+
+**Verification of Successful Deployment**
+<img width="876" height="352" alt="Screenshot 2026-06-05 171042" src="https://github.com/user-attachments/assets/f7c86be6-e883-4575-bb7e-59ae6c703751" />
+
+
+
 </p>
 <br />
 <h2>Step 4: Setting a Static Private IP for the Server</h2>
