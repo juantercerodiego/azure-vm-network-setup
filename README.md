@@ -51,9 +51,9 @@ This project is the foundation for all my cloud lab experiments. Before managing
   
 **1:** Logged into the Azure Portal.
   
-**2:** Searched for Virtual Networks and clicked Create.
+**2:** Searched for Virtual Networks and click Create.
 
-**3:** Created a new Resource Group (like Lab-RG) to keep all my project files in one neat pile.
+**3:** Create a new Resource Group, by clicking "Create new " (like Lab-RG) to keep all my project files in one neat pile.
 
 **4:** Named the VNet (like Lab-VNet), chose a region close to me, and left the default IP address space settings. Hit Review + Create.
 </p>
