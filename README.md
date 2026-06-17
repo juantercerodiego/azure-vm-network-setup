@@ -11,7 +11,7 @@
 
 <h1>Azure Virtual Machines & Network Infrastructure Setup</h1>
 
-This project is the foundation for all my cloud lab experiments. Before managing users or inspecting traffic, I needed to build the digital workspace. I deployed two virtual machines in Microsoft Azure, configured a custom Virtual Network (VNet), and adjusted internal IP addresses so the machines could talk to each other securely.<br />
+**Quick Note:** This project builds the foundational network structure for my cloud environment. Once this network is deployed, I use it to configure Active Directory, run automated user-onboarding scripts, and test client log-ins. You can view that next phase here: [https://github.com/juantercerodiego/server-setup-to-employee-login] <br />
 
 
 
