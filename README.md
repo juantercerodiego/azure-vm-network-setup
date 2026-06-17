@@ -26,7 +26,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
 <h2>Operating Systems Used </h2>
 
 - **Windows Server 2025** (Soon To Be Domain Controller)
-- **Windows 11** (Soon To Be Employee Workstation)
+- **Windows 11 Pro** (Soon To Be Employee Workstation)
 
 <h2>What You Need Before Starting (Prerequisites)</h2>
 
@@ -92,7 +92,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 </p>
 <br />
-<h2>Step 3: Deploying the Windows 10 Client VM</h2>
+<h2>Step 3: Deploying the Windows 11 Pro Client VM</h2>
 <p>
 <img width="767" height="600" alt="Screenshot 2026-06-05 170358" src="https://github.com/user-attachments/assets/d696f209-1816-4a9c-8301-114cff6b9164" />
 
