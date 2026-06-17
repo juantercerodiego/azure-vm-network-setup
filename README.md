@@ -51,11 +51,11 @@ This project is the foundation for all my cloud lab experiments. Before managing
   
 **1:** Logged into the Azure Portal.
   
-**2:** Searched for Virtual Networks and click Create.
+**2:** Searched for **Virtual Networks** and click Create.
 
-**3:** Create a new Resource Group, by clicking "Create new" (like Lab-RG) to keep all my project files in one neat pile.
+**3:** Create a new Resource Group, by clicking "Create new" (like **`Lab-RG`**) to keep all my project files in one neat pile.
 
-**4:** Named the VNet (like Lab-VNet), chose a region close to me, and left the default IP address space settings. Hit Review + Create.
+**4:** Named the VNet (like **`Lab-VNet`**), chose a region close to me, and left the default IP address space settings. Hit **Review + Create**.
 </p>
 
 
@@ -76,13 +76,13 @@ This project is the foundation for all my cloud lab experiments. Before managing
   
 **Next, I built the main server machine that will eventually run the whole company network.**
   
-**1:** Searched for Virtual Machines in Azure and clicked Create -> Azure Virtual Machine.
+**1:** Searched for **Virtual Machines** in Azure and clicked **Create** -> **Azure Virtual Machine**.
   
-**2:** Selected my Lab-RG resource group, named the machine (like Server-VM), and chose Windows Server 2025 as the image.
+**2:** Selected my **`Lab-RG`** resource group, named the machine (like **`Server-VM`**), and selected **Windows Server 2025** as the image.
 
-**3:** Set up my administrator username and password (wrote these down so I didn't get locked out!).
+**3:** Set up my administrator username and password (and safely documented them so I wouldn't get locked out!).
 
-**4:** Under the Networking tab, made sure it was hooked up to the Lab-VNet I built in Step 1. Left the other defaults and hit Create.
+**4:** Under the **Networking** tab, made sure it was hooked up to the **`Lab-VNet`** I built in Step 1. Left the other defaults and hit Create.
 
 
 ⭐ **Verification of Successful Deployment** ⭐
@@ -106,9 +106,9 @@ This project is the foundation for all my cloud lab experiments. Before managing
   
 **1:** Followed the exact same steps to create a second Virtual Machine.
   
-**2:** Named this one Client-VM and chose Windows 10 Pro as the operating system image.
+**2:** Named this workstation **`Client-VM`** and select Windows 11 Pro as the operating system image.
 
-**3:** Under the Networking tab, I made absolutely sure it was assigned to the exact same Lab-VNet as the server. (If they aren't on the same network, they can't talk!).
+**3:** Under the **Networking** tab, I made absolutely sure it was assigned to the exact same **`Lab-VNet`** as the server. *(If they aren't on the same network, they can't communicate!)*.
 
 **4:** Hit Create and waited for the deployment to finish.
 
@@ -131,13 +131,13 @@ This project is the foundation for all my cloud lab experiments. Before managing
   
 **In a real business, the server's address cannot change, or the employee computers will get confused and lose connection. I had to lock the server's IP address in place.**
   
-**1:** In the Azure Portal, went to my Server-VM page.
+**1:** In the Azure Portal, navigated to the **`Server-VM`** overview page.
   
-**2:** Clicked on Networking on the left menu, then clicked on the server's Network Interface (NIC).
+**2:** Clicked on **Networking** on the left menu, then clicked on the server's primary **Network Interface (NIC)**.
 
-**3:** Went to IP configurations, clicked on the primary configuration, and changed the assignment from Dynamic (changing) to Static (permanent).
+**3:** Went to **IP configurations**, clicked on the primary setting line, and changed the assignment from **Dynamic** (changing) to **Static** (permanent).
 
-**4:** Saved the changes. Now the server will keep the exact same private IP address forever.
+**4:** Saved the changes. Now the server will keep the exact same private IP address permanently.
 
 
 
