@@ -25,7 +25,7 @@ This project is the foundation for all my cloud lab experiments. Before managing
 
 <h2>Operating Systems Used </h2>
 
-- **Windows Server 2022** (Soon To Be Domain Controller)
+- **Windows Server 2025** (Soon To Be Domain Controller)
 - **Windows 11** (Soon To Be Employee Workstation)
 
 <h2>What You Need Before Starting (Prerequisites)</h2>
