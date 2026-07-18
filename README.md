@@ -17,6 +17,10 @@ In this project, I logged into Microsoft Azure and built that entire environment
 - **Virtual Networks (VNets) & Subnets** (The digital wires and boundaries connecting the machines)
 - **Network Security Groups (NSGs)** (The digital security guards that block unwanted traffic)
 
+<h2>Languages Used</h2>
+
+- **N/A** (GUI-based Cloud Infrastructure Deployment)
+
 <h2>Operating Systems Used </h2>
 
 - **Windows Server 2025** (The main "brain" computer for the company)
@@ -30,7 +34,42 @@ In this project, I logged into Microsoft Azure and built that entire environment
 
 ---
 
-<h2>How I Built It (Step-by-Step)</h2>
+<h2>Phase 0: Activating Your Azure Subscription</h2>
+
+Before you can build anything in Azure, you have to activate a subscription. This tells Azure how to handle your account access and lab resources. If you don't have one set up yet, here is exactly how I configured mine:
+
+1. Logged into the **Azure Portal**.
+2. Searched for **Subscriptions** in the top search bar and clicked **Add**.
+3. On the **Basics** tab, gave the subscription a descriptive name (like `Lab-Subscription`).
+4. Selected my billing account, billing profile, and invoice section from the dropdowns. 
+5. Under the **Plan** options, chose **Microsoft Azure Plan for DevTest** (since this is an isolated training and testing environment) and kept the default advanced settings.
+
+#### **Configuration Screenshot:**
+<p align="center">
+<img width="771" height="550" alt="Configuring Subscription Basics" src="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/assets/subscription-setup-basics.png" />
+</p>
+
+6. Added **Tags** (Name/Value pairs) to keep track of resource costs, then clicked **Review + Create**.
+
+#### **Validation Passed Screenshot:**
+<p align="center">
+<img width="771" height="550" alt="Subscription Validation Passed" src="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/assets/subscription-validation-passed.png" />
+</p>
+
+7. Once the portal verified the settings and gave a **Validation Passed** message, clicked **Create**. 
+
+#### ⭐ **Verification of Successful Subscription Activation** ⭐
+<p align="center">
+<img width="733" height="391" alt="Subscription Creation Success Notification" src="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/assets/subscription-success-notification.png" />
+</p>
+
+*Note: Once it finishes deploying, you will see a "Successfully created the subscription" notification at the top right. Click **Go to subscription** to view it. If it doesn't show up in your main list right away, make sure your portal view filter isn't hiding it!*
+
+<br />
+
+---
+
+<h2>How I Built It (Step-by-Step Infrastructure Setup)</h2>
 
 <h2>Step 1: Creating the Resource Group and Virtual Network (VNet)</h2>
 
