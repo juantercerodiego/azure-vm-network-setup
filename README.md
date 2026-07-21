@@ -46,21 +46,24 @@ Before you can build anything in Azure, you have to activate a subscription. Thi
 
 #### **Configuration Screenshot:**
 <p align="center">
-<img width="771" height="550" alt="Configuring Subscription Basics" src="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/assets/subscription-setup-basics.png" />
+<img width="953" height="631" alt="1" src="https://github.com/user-attachments/assets/799d6d99-da98-483a-9176-37a566e17105" />
+
 </p>
 
 6. Added **Tags** (Name/Value pairs) to keep track of resource costs, then clicked **Review + Create**.
 
 #### **Validation Passed Screenshot:**
 <p align="center">
-<img width="771" height="550" alt="Subscription Validation Passed" src="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/assets/subscription-validation-passed.png" />
+<img width="977" height="872" alt="2" src="https://github.com/user-attachments/assets/80e03a51-1941-42b2-bab9-41c46a418aed" />
+
 </p>
 
 7. Once the portal verified the settings and gave a **Validation Passed** message, clicked **Create**. 
 
 #### ⭐ **Verification of Successful Subscription Activation** ⭐
 <p align="center">
-<img width="733" height="391" alt="Subscription Creation Success Notification" src="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/assets/subscription-success-notification.png" />
+<img width="747" height="491" alt="3" src="https://github.com/user-attachments/assets/9dbeda94-c368-4cd3-a613-9682b1560c13" />
+
 </p>
 
 *Note: Once it finishes deploying, you will see a "Successfully created the subscription" notification at the top right. Click **Go to subscription** to view it. If it doesn't show up in your main list right away, make sure your portal view filter isn't hiding it!*
